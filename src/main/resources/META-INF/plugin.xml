@@ -1,0 +1,28 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.suixin.poihelper</id>
+    <name>Poi Helper</name>
+    <vendor email="2469012478@qq.com" url="https://www.poihelper.com">no</vendor>
+    <vendor>poihelper</vendor>
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <version>2023.12.14</version>
+    <description><![CDATA[
+    This plugin enables you to quickly sort your export index.<br/>
+    <br/>
+
+    右键，点击“导出字段排序”，快速排序你的导出序号<br/>
+  ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <resource-bundle>messages.MyBundle</resource-bundle>
+
+    <actions>
+        <group id="EasyPoiMenuGroup" text="导出字段排序" description="导出字段排序">
+            <add-to-group group-id="EditorPopupMenu" anchor="first" />
+            <action id="EasyPoiMenuAction" class="com.suixin.poihelper.menu.PoiHelperMenu" text="导出字段排序" description="导出字段排序" />
+        </group>
+    </actions>
+</idea-plugin>
