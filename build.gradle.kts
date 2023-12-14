@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.suixin"
-version = "2023.8.9"
+version = "2023.12.14"
 
 repositories {
     jcenter()
